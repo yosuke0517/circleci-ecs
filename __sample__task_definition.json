@@ -1,0 +1,21 @@
+{
+  "family": "circleci-demo-service",
+  "containerDefinitions": [
+    {
+      "name": "circleci-demo-service",
+      "image": "{ecr image}",
+      "cpu": 128,
+      "memoryReservation": 128,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "protocol": "tcp"
+        }
+      ],
+      "command": [
+        "./main"
+      ],
+      "essential": true
+    }
+  ]
+}
